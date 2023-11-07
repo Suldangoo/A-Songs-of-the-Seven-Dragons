@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\TextBlink.cs" />
+    <Compile Include="Assets\Scripts\FixedResolution.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
