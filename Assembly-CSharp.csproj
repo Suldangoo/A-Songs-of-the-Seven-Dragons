@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\FixedResolution.cs" />
     <Compile Include="Assets\Scripts\Title\TextBlink.cs" />
     <Compile Include="Assets\Scripts\Title\LogoMovement.cs" />
+    <Compile Include="Assets\Scripts\SetStatus.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
