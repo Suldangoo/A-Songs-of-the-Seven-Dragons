@@ -60,8 +60,11 @@
     <Compile Include="Assets\Scripts\FixedResolution.cs" />
     <Compile Include="Assets\Scripts\Title\TextBlink.cs" />
     <Compile Include="Assets\Scripts\Title\LogoMovement.cs" />
-    <Compile Include="Assets\Scripts\SetStatus.cs" />
-    <Compile Include="Assets\Scripts\NicknameInputValidator.cs" />
+    <Compile Include="Assets\Scripts\CreateCharacter\SetStatus.cs" />
+    <Compile Include="Assets\Scripts\CreateCharacter\NicknameInputValidator.cs" />
+    <Compile Include="Assets\Scripts\SaveData\SaveViewerEditor.cs" />
+    <Compile Include="Assets\Scripts\SaveData\SaveManager.cs" />
+    <Compile Include="Assets\Scripts\SaveData\SaveDataViewer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
