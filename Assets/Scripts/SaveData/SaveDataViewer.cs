@@ -19,8 +19,6 @@ public class SaveDataViewer : MonoBehaviour
     private static SaveDataViewer instance;
     #endregion
 
-    public bool ShowTutorial;
-    public int BestScore;
     public float bgmVolume;
     public float sfxVolume;
 
@@ -36,8 +34,6 @@ public class SaveDataViewer : MonoBehaviour
     // 저장 데이터 가져와 표시
     public void GetSave()
     {
-        ShowTutorial = SaveManager.ShowTutorial;
-        BestScore = SaveManager.BestScore;
         bgmVolume = SaveManager.BgmVolume;
         sfxVolume = SaveManager.SfxVolume;
     }
@@ -45,8 +41,6 @@ public class SaveDataViewer : MonoBehaviour
     // 현재 표시된 데이터로 저장 데이터 수정
     public void SetSave()
     {
-        SaveManager.ShowTutorial = ShowTutorial;
-        SaveManager.BestScore = BestScore;
         SaveManager.BgmVolume = bgmVolume;
         SaveManager.SfxVolume = sfxVolume;
     }

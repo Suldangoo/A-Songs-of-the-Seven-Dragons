@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\SaveData\SaveViewerEditor.cs" />
     <Compile Include="Assets\Scripts\SaveData\SaveManager.cs" />
     <Compile Include="Assets\Scripts\SaveData\SaveDataViewer.cs" />
+    <Compile Include="Assets\Scripts\TextMovement.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
