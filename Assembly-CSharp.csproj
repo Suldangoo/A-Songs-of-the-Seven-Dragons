@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\Title\TextBlink.cs" />
     <Compile Include="Assets\Scripts\Title\LogoMovement.cs" />
     <Compile Include="Assets\Scripts\SetStatus.cs" />
+    <Compile Include="Assets\Scripts\NicknameInputValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
