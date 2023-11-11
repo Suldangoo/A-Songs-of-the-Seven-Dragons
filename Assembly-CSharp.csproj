@@ -63,10 +63,10 @@
     <Compile Include="Assets\Scripts\CreateCharacter\CreateCharacter.cs" />
     <Compile Include="Assets\Scripts\TextMovement.cs" />
     <Compile Include="Assets\Scripts\Title\TextBlink.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Title\LogoMovement.cs" />
     <Compile Include="Assets\Scripts\SaveData\SaveManager.cs" />
     <Compile Include="Assets\Scripts\CreateCharacter\NicknameInputValidator.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
