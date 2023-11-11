@@ -5,21 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
+    // --- 싱글톤 패턴
+    public static SceneChanger Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<SceneChanger>();
+            }
+            return instance;
+        }
+    }
     private static SceneChanger instance;
+
     private CanvasGroup fadeCanvasGroup;
     private float fadeDuration = 0.6f;
 
     private void Awake()
     {
-        // 싱글톤 패턴
-        if (instance != null && instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-
-        instance = this;
-
         // 캔버스 그룹 및 이미지 생성
         CreateFadeImage();
 

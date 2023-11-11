@@ -2,22 +2,22 @@ using UnityEngine;
 
 public static class SaveManager
 {
-    static string progressKey = "progress"; // 진행 여부
-    static string genderKey = "gender";
-    static string nickNameKey = "nickName";
-    static string levelKey = "level";
-    static string experienceKey = "experience";
-    static string hpKey = "hp";
-    static string strengthKey = "strength";
-    static string agilityKey = "agility";
-    static string healthKey = "health";
-    static string wisdomKey = "wisdom";
-    static string charmKey = "charm";
-    static string goldKey = "gold";
-    static string weaponKey = "weapon";
-    static string armorKey = "armor";
-    static string smallHpPotionKey = "smallHpPotion";
-    static string largeHpPotionKey = "largeHpPotion";
+    static string progressKey = "progress";             // 진행 여부
+    static string genderKey = "gender";                 // 성별
+    static string nickNameKey = "nickName";             // 캐릭터 닉네임
+    static string levelKey = "level";                   // 캐릭터 레벨
+    static string experienceKey = "experience";         // 캐릭터 경험치
+    static string hpKey = "hp";                         // 캐릭터 현재 체력
+    static string strengthKey = "strength";             // 힘 스테이터스
+    static string agilityKey = "agility";               // 민첩 스테이터스
+    static string healthKey = "health";                 // 건강 스테이터스
+    static string wisdomKey = "wisdom";                 // 지혜 스테이터스
+    static string charmKey = "charm";                   // 매력 스테이터스
+    static string goldKey = "gold";                     // 골드
+    static string weaponKey = "weapon";                 // 착용 무기
+    static string armorKey = "armor";                   // 착용 방어구
+    static string smallHpPotionKey = "smallHpPotion";   // 소형 HP포션
+    static string largeHpPotionKey = "largeHpPotion";   // 대형 HP포션
 
     static string sfxVolumeKey = "sfxVolume";
     static string bgmVolumeKey = "bgmVolume";

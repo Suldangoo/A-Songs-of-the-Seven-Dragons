@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2232379510480423075}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.9277731, y: -0.2930892, z: 0.01145836}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44,7 +44,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fcda00722df4ef43a5d8780e85f53bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShowTutorial: 0
-  BestScore: 0
-  bgmVolume: 0
+  progress: 0
+  gender: 0
+  nickName: 
+  level: 0
+  experience: 0
+  hp: 0
+  strength: 0
+  agility: 0
+  health: 0
+  wisdom: 0
+  charm: 0
+  gold: 0
+  weapon: 0
+  armor: 0
+  smallHpPotion: 0
+  largeHpPotion: 0
   sfxVolume: 0
+  bgmVolume: 0
