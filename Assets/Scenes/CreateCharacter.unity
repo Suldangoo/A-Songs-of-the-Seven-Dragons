@@ -1588,7 +1588,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 658355309}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1556696833}
+        m_TargetAssemblyTypeName: CreateCharacter, Assembly-CSharp
+        m_MethodName: OnStartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &690913666
 GameObject:
   m_ObjectHideFlags: 0
@@ -4375,6 +4387,9 @@ MonoBehaviour:
   maxStatus: 15
   stats: 0500000005000000050000000500000005000000
   remainingPoints: 15
+  nicknameInputField: {fileID: 1798085681}
+  maleToggle: {fileID: 115016314}
+  femaleToggle: {fileID: 887693243}
 --- !u!4 &1556696834
 Transform:
   m_ObjectHideFlags: 0

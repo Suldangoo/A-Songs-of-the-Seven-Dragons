@@ -60,7 +60,7 @@
     <Compile Include="Assets\Scripts\SaveData\SaveDataViewer.cs" />
     <Compile Include="Assets\Scripts\SceneChanger.cs" />
     <Compile Include="Assets\Scripts\FixedResolution.cs" />
-    <Compile Include="Assets\Scripts\CreateCharacter\SetStatus.cs" />
+    <Compile Include="Assets\Scripts\CreateCharacter\CreateCharacter.cs" />
     <Compile Include="Assets\Scripts\TextMovement.cs" />
     <Compile Include="Assets\Scripts\Title\TextBlink.cs" />
     <Compile Include="Assets\Scripts\Title\LogoMovement.cs" />

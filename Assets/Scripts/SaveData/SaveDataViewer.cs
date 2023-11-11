@@ -54,7 +54,7 @@ public class SaveDataViewer : MonoBehaviour
         nickName = SaveManager.NickName;
         level = SaveManager.Level;
         experience = SaveManager.Experience;
-        hp = SaveManager.HP;
+        hp = SaveManager.Hp;
         strength = SaveManager.Strength;
         agility = SaveManager.Agility;
         health = SaveManager.Health;
@@ -77,7 +77,7 @@ public class SaveDataViewer : MonoBehaviour
         SaveManager.NickName = nickName;
         SaveManager.Level = level;
         SaveManager.Experience = experience;
-        SaveManager.HP = hp;
+        SaveManager.Hp = hp;
         SaveManager.Strength = strength;
         SaveManager.Agility = agility;
         SaveManager.Health = health;

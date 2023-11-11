@@ -60,7 +60,7 @@ public static class SaveManager
         set { PlayerPrefs.SetInt(experienceKey, value); }
     }
 
-    public static float HP
+    public static float Hp
     {
         get { return PlayerPrefs.GetFloat(hpKey); }
         set { PlayerPrefs.SetFloat(hpKey, value); }
