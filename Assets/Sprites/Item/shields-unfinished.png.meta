@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shields-unfinished_0
+      name: 1
       rect:
         serializedVersion: 2
         x: 0
@@ -180,7 +180,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shields-unfinished_3
+      name: 3
       rect:
         serializedVersion: 2
         x: 48
@@ -222,7 +222,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shields-unfinished_5
+      name: 4
       rect:
         serializedVersion: 2
         x: 0
@@ -243,7 +243,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shields-unfinished_6
+      name: 313132
       rect:
         serializedVersion: 2
         x: 16
@@ -264,7 +264,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shields-unfinished_7
+      name: 8
       rect:
         serializedVersion: 2
         x: 32
@@ -390,7 +390,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shields-unfinished_13
+      name: 7
       rect:
         serializedVersion: 2
         x: 48
@@ -432,7 +432,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shields-unfinished_15
+      name: 5
       rect:
         serializedVersion: 2
         x: 0
@@ -453,7 +453,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shields-unfinished_16
+      name: 31231
       rect:
         serializedVersion: 2
         x: 16
@@ -495,7 +495,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shields-unfinished_18
+      name: 6
       rect:
         serializedVersion: 2
         x: 48
@@ -516,7 +516,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shields-unfinished_19
+      name: 9
       rect:
         serializedVersion: 2
         x: 64
@@ -537,7 +537,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shields-unfinished_20
+      name: 2
       rect:
         serializedVersion: 2
         x: 0
@@ -652,31 +652,31 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      shields-unfinished_0: -1347024966
+      1: 1193146580
+      2: 179857642
+      3: 713081650
+      31231: 324220281
+      313132: 778838813
+      4: 1096778484
+      5: -1132217910
+      6: 713081650
+      7: 472878004
+      8: -373384237
+      9: 502254356
       shields-unfinished_1: 437248921
       shields-unfinished_10: 893673250
       shields-unfinished_11: -862663249
       shields-unfinished_12: -382031701
-      shields-unfinished_13: 472878004
       shields-unfinished_14: -1015757177
-      shields-unfinished_15: -1132217910
-      shields-unfinished_16: -1452810502
-      shields-unfinished_17: 324220281
-      shields-unfinished_18: 713081650
-      shields-unfinished_19: 502254356
-      shields-unfinished_2: 1320321430
-      shields-unfinished_20: 1193146580
-      shields-unfinished_21: 230113646
-      shields-unfinished_22: -143928383
-      shields-unfinished_23: -865009679
-      shields-unfinished_24: 248642205
-      shields-unfinished_3: 179857642
-      shields-unfinished_4: 2131841821
-      shields-unfinished_5: 1096778484
-      shields-unfinished_6: 778838813
-      shields-unfinished_7: -373384237
-      shields-unfinished_8: 681739127
-      shields-unfinished_9: 805877204
+      shields-unfinished_17: 502254356
+      shields-unfinished_2: 230113646
+      shields-unfinished_21: -143928383
+      shields-unfinished_22: -865009679
+      shields-unfinished_23: 248642205
+      shields-unfinished_24: 2131841821
+      shields-unfinished_4: 1096778484
+      shields-unfinished_8: 805877204
+      shields-unfinished_9: -1347024966
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

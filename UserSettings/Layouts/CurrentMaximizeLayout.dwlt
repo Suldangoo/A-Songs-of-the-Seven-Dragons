@@ -227,9 +227,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 5cf3ffff
-      m_LastClickedID: -3236
-      m_ExpandedIDs: 68d9ffff28fbffffde4a0000f24a00008c4b0000c64b0000
+      m_SelectedIDs: 52c2ffff
+      m_LastClickedID: -15790
+      m_ExpandedIDs: 68d9ffff28fbffff8c4b0000c64b0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -560,9 +560,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.1081057, y: -3.6019452, z: 0.033212077}
+    m_Target: {x: -0.49513105, y: -0.95969516, z: -0.015642975}
     speed: 2
-    m_Value: {x: 1.1081057, y: -3.6019452, z: 0.033212077}
+    m_Value: {x: -0.49513105, y: -0.95969516, z: -0.015642975}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -613,9 +613,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 2.2008421
+    m_Target: 5.0484424
     speed: 2
-    m_Value: 2.2008421
+    m_Value: 5.0484424
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -735,22 +735,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites/RPG Icon Pack
+    - Assets/Sprites
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 69
   m_LastFolders:
-  - Assets/Sprites/RPG Icon Pack
+  - Assets/Sprites
   m_LastFoldersGridSize: 69
   m_LastProjectPath: C:\Git\A-Songs-of-the-Seven-Dragons
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 26}
-    m_SelectedIDs: b44c0000
-    m_LastClickedID: 19636
-    m_ExpandedIDs: 00000000704c0000a64c000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: a64c0000
+    m_LastClickedID: 19622
+    m_ExpandedIDs: 00000000704c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -803,8 +803,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 5cf3ffff
-    m_LastClickedInstanceID: -3236
+    m_SelectedInstanceIDs: 52c2ffff
+    m_LastClickedInstanceID: -15790
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000f8660000fe5200000454000040520000484b00008c4c0000144d0000084c0000
     m_RenameOverlay:
@@ -830,7 +830,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 994}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 69
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207

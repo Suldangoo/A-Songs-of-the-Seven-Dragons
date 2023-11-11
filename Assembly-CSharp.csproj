@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Title\LogoMovement.cs" />
     <Compile Include="Assets\Scripts\SaveData\SaveManager.cs" />
     <Compile Include="Assets\Scripts\CreateCharacter\NicknameInputValidator.cs" />
+    <Compile Include="Assets\Scripts\InfoManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
