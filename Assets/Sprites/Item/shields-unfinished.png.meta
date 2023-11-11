@@ -180,7 +180,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3
+      name: 4
       rect:
         serializedVersion: 2
         x: 48
@@ -222,7 +222,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 4
+      name: 3
       rect:
         serializedVersion: 2
         x: 0
@@ -654,10 +654,10 @@ TextureImporter:
     nameFileIdTable:
       1: 1193146580
       2: 179857642
-      3: 713081650
+      3: 1096778484
       31231: 324220281
       313132: 778838813
-      4: 1096778484
+      4: 179857642
       5: -1132217910
       6: 713081650
       7: 472878004

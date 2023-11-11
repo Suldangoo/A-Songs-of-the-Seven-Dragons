@@ -36,12 +36,12 @@ public class InfoManager : MonoBehaviour
     [SerializeField] private TMP_Text smallHpPotionText;
     [SerializeField] private TMP_Text largeHpPotionText;
 
-    private void Update()
+    private void Start()
     {
         UpdateInfo();
     }
 
-    private void UpdateInfo()
+    public void UpdateInfo()
     {
         // 1. 캐릭터 외형
         bool isMale = SaveManager.Gender;
@@ -77,17 +77,32 @@ public class InfoManager : MonoBehaviour
 
         // 8. 무기
         int weaponIndex = SaveManager.Weapon;
-        if (weaponIndex >= 0 && weaponIndex < weaponImages.Length)
+        for (int i = 0; i < weaponImages.Length; i++)
         {
-            weaponImages[weaponIndex].gameObject.SetActive(true);
+            if (i == weaponIndex)
+            {
+                weaponImages[i].gameObject.SetActive(true);
+            }
+            else
+            {
+                weaponImages[i].gameObject.SetActive(false);
+            }
         }
 
         // 9. 방어구
         int armorIndex = SaveManager.Armor;
-        if (armorIndex >= 0 && armorIndex < armorImages.Length)
+        for (int i = 0; i < armorImages.Length; i++)
         {
-            armorImages[armorIndex].gameObject.SetActive(true);
+            if (i == armorIndex)
+            {
+                armorImages[i].gameObject.SetActive(true);
+            }
+            else
+            {
+                armorImages[i].gameObject.SetActive(false);
+            }
         }
+
 
         // 10. 포션
         smallHpPotionText.text = SaveManager.SmallHpPotion.ToString();
