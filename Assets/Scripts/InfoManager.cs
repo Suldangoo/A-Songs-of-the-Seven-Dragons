@@ -31,8 +31,10 @@ public class InfoManager : MonoBehaviour
     [SerializeField] private TMP_Text wisdomText;
     [SerializeField] private TMP_Text charmText;
     [SerializeField] private TMP_Text goldText;
-    [SerializeField] private Image[] weaponImages; // 무기 이미지 배열
-    [SerializeField] private Image[] armorImages; // 방어구 이미지 배열
+    [SerializeField] private Image weaponImage; // 무기 이미지
+    [SerializeField] private Image armorImage; // 방어구 이미지
+    [SerializeField] public Sprite[] weaponImages; // 무기 이미지 배열
+    [SerializeField] public Sprite[] armorImages; // 방어구 이미지 배열
     [SerializeField] private TMP_Text smallHpPotionText;
     [SerializeField] private TMP_Text largeHpPotionText;
 
@@ -77,30 +79,16 @@ public class InfoManager : MonoBehaviour
 
         // 8. 무기
         int weaponIndex = SaveManager.Weapon;
-        for (int i = 0; i < weaponImages.Length; i++)
+        if (weaponIndex >= 0 && weaponIndex < weaponImages.Length)
         {
-            if (i == weaponIndex)
-            {
-                weaponImages[i].gameObject.SetActive(true);
-            }
-            else
-            {
-                weaponImages[i].gameObject.SetActive(false);
-            }
+            weaponImage.sprite = weaponImages[weaponIndex];
         }
 
         // 9. 방어구
         int armorIndex = SaveManager.Armor;
-        for (int i = 0; i < armorImages.Length; i++)
+        if (armorIndex >= 0 && armorIndex < armorImages.Length)
         {
-            if (i == armorIndex)
-            {
-                armorImages[i].gameObject.SetActive(true);
-            }
-            else
-            {
-                armorImages[i].gameObject.SetActive(false);
-            }
+            armorImage.sprite = armorImages[armorIndex];
         }
 
 

@@ -35,6 +35,6 @@ public class ItemManager : MonoBehaviour
     private static ItemManager instance;
     #endregion
 
-    [SerializeField] private WeaponData[] weaponDatas; // 무기 데이터 배열
-    [SerializeField] private ArmorData[] armorDatas; // 방어구 데이터 배열
+    public WeaponData[] weaponDatas; // 무기 데이터 배열
+    public ArmorData[] armorDatas; // 방어구 데이터 배열
 }

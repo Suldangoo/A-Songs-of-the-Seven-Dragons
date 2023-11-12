@@ -227,9 +227,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1487ffff
-      m_LastClickedID: -30956
-      m_ExpandedIDs: 1e87ffff88b0ffffd8b0ffff54b1ffff5ab2ffff3ccdffff8ccdffff06ceffff7aceffffb2f9ffffb8f9ffffc4f9ffffd0f9ffff28fbfffff4ffffff3e4b0000324d00005e6b0000366c0000826c0000f86c0000946d00001871000034730000ae760000c8760000d277000048780000e4780000
+      m_SelectedIDs: a483ffff
+      m_LastClickedID: -31836
+      m_ExpandedIDs: 8c44ffff7050ffff8056ffffa683ffff1a84ffff1e87ffff88b0ffffd8b0ffff54b1ffff5ab2ffff3ccdffff8ccdffff06ceffff7aceffffb2f9ffffb8f9ffffc4f9ffffd0f9ffff28fbfffff4ffffff3e4b0000324d00005e6b0000366c0000826c0000f86c0000946d00001871000034730000ae760000c8760000d277000048780000e4780000e48c000064970000889700009c9700002a9800007698000096980000b8990000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -560,9 +560,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.0023855, y: 4.156522, z: -0.0014467093}
+    m_Target: {x: -2.3228881, y: -2.6221585, z: -0.01624156}
     speed: 2
-    m_Value: {x: -1.0023855, y: 4.156522, z: -0.0014467093}
+    m_Value: {x: -2.3228881, y: -2.6221585, z: -0.01624156}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -613,9 +613,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 0.7323296
+    m_Target: 2.0753155
     speed: 2
-    m_Value: 0.7323296
+    m_Value: 2.0753155
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -735,22 +735,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 69
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: 69
   m_LastProjectPath: C:\Git\A-Songs-of-the-Seven-Dragons
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 384e0000
-    m_LastClickedID: 20024
-    m_ExpandedIDs: 000000002e4e000000ca9a3b
+    scrollPos: {x: 0, y: 106}
+    m_SelectedIDs: 3a4e0000
+    m_LastClickedID: 20026
+    m_ExpandedIDs: 000000002e4e00003c4e0000404e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -803,10 +803,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 1487ffff
-    m_LastClickedInstanceID: -30956
+    m_SelectedInstanceIDs: a483ffff
+    m_LastClickedInstanceID: -31836
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000f8660000fe5200000454000040520000484b00008c4c0000084c00004a540000024c00001a4d0000a24d0000
+    m_ExpandedInstanceIDs: c6230000f8660000fe5200000454000040520000484b00008c4c0000084c00004a540000024c00001a4d0000a24d0000544e00009c4d0000a84d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -925,7 +925,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 2335
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:

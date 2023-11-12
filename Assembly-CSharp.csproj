@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\CreateCharacter\NicknameInputValidator.cs" />
     <Compile Include="Assets\Scripts\UITextInteraction.cs" />
     <Compile Include="Assets\Scripts\ScrollIndicatorController.cs" />
+    <Compile Include="Assets\Scripts\ItemInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
