@@ -58,9 +58,12 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\ItemManager.cs" />
     <Compile Include="Assets\Scripts\SaveData\SaveViewerEditor.cs" />
+    <Compile Include="Assets\Scripts\ScrollIndicatorController.cs" />
     <Compile Include="Assets\Scripts\SaveData\SaveDataViewer.cs" />
+    <Compile Include="Assets\Scripts\UITextInteraction.cs" />
     <Compile Include="Assets\Scripts\InfoManager.cs" />
     <Compile Include="Assets\Scripts\SceneChanger.cs" />
+    <Compile Include="Assets\Scripts\ItemInfo.cs" />
     <Compile Include="Assets\Scripts\FixedResolution.cs" />
     <Compile Include="Assets\Scripts\CreateCharacter\CreateCharacter.cs" />
     <Compile Include="Assets\Scripts\TextMovement.cs" />
@@ -69,9 +72,7 @@
     <Compile Include="Assets\Scripts\Title\LogoMovement.cs" />
     <Compile Include="Assets\Scripts\SaveData\SaveManager.cs" />
     <Compile Include="Assets\Scripts\CreateCharacter\NicknameInputValidator.cs" />
-    <Compile Include="Assets\Scripts\UITextInteraction.cs" />
-    <Compile Include="Assets\Scripts\ScrollIndicatorController.cs" />
-    <Compile Include="Assets\Scripts\ItemInfo.cs" />
+    <Compile Include="Assets\Scripts\EventManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

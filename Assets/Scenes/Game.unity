@@ -966,7 +966,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 160, y: 45}
-  m_SizeDelta: {x: 0, y: 50}
+  m_SizeDelta: {x: 281.68, y: 50}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &258394562
 MonoBehaviour:
@@ -1116,7 +1116,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 160, y: -30}
-  m_SizeDelta: {x: 0, y: 50}
+  m_SizeDelta: {x: 283.41, y: 50}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &261365425
 MonoBehaviour:
@@ -2618,7 +2618,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: -80}
-  m_SizeDelta: {x: 0, y: 50}
+  m_SizeDelta: {x: 465.8, y: 50}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &890256154
 MonoBehaviour:
@@ -2936,6 +2936,330 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 975158243}
   m_CullTransparentMesh: 1
+--- !u!1 &978466353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 978466354}
+  - component: {fileID: 978466355}
+  m_Layer: 0
+  m_Name: EventManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &978466354
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978466353}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1292683581}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &978466355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978466353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 637f199189aba214e8ca073d5ac147d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nowEvent: 1
+  events:
+  - title: "\uD504\uB864\uB85C\uADF8"
+    illustration: {fileID: 21300000, guid: fef1453420433e249bf92378cf8f9e96, type: 3}
+    text: "\uC774\uAC83\uC740 \uC7A5\uD669\uD55C \uD504\uB864\uB85C\uADF8\uC774\uB2E4."
+    buttonTexts:
+    - "\uBAA8\uD5D8\uC744 \uC2DC\uC791\uD55C\uB2E4."
+    buttonEvents:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 978466355}
+          m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
+          m_MethodName: ChangeEvent
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - title: "\uB9C8\uC744 : \uC5D8\uBC84\uB77C"
+    illustration: {fileID: 21300000, guid: fef1453420433e249bf92378cf8f9e96, type: 3}
+    text: "\uB2F9\uC2E0\uC740 \uC774\uB8E8\uD2F0\uC544 \uB300\uB959\uC758 \uAC00\uC7A5
+      \uB0A8\uCABD\uC5D0 \uC790\uB9AC\uC7A1\uC740 \uB3C4\uC2DC, '\uC5D8\uBC84\uB77C'\uC758
+      \uAD11\uC7A5 \uD55C \uAC00\uC6B4\uB370\uC5D0 \uC11C\uC788\uB2E4.\n\n\uC8FC\uC704\uB97C
+      \uB458\uB7EC\uBCF4\uB2C8 \uC2DC\uB04C\uBC85\uC801\uD55C \uC0C1\uC810\uAC00\uB85C
+      \uB4E4\uC5B4\uAC00\uB294 \uACE8\uBAA9\uAE38\uC774 \uBCF4\uC600\uC73C\uBA70,
+      \uBD81\uCABD\uC5D4 \uC232\uC73C\uB85C \uB098\uAC00\uB294 \uAE38\uC774 \uC788\uB2E4."
+    buttonTexts:
+    - "\uB9C8\uC744\uC744 \uB3CC\uC544\uB2E4\uB2CC\uB2E4."
+    - "\uB358\uC804\uC73C\uB85C \uD5A5\uD55C\uB2E4."
+    - "\uC0C1\uC810\uAC00\uB97C \uB458\uB7EC\uBCF8\uB2E4."
+    - "\uD734\uC2DD\uCC98\uB97C \uCC3E\uB294\uB2E4."
+    buttonEvents:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 978466355}
+          m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
+          m_MethodName: ChangeEvent
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 978466355}
+          m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
+          m_MethodName: ChangeEvent
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 978466355}
+          m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
+          m_MethodName: ChangeEvent
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 978466355}
+          m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
+          m_MethodName: ChangeEvent
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - title: "\uC5D8\uBC84\uB77C\uB97C \uB3CC\uC544\uB2E4\uB2C8\uB2E4"
+    illustration: {fileID: 0}
+    text: "'\uC5D8\uBC84\uB77C'\uC758 \uC0C1\uC810\uAC00\uC5D0 \uB3C4\uCC29\uD558\uC790,
+      \uB2E4\uC591\uD55C \uAC00\uAC8C\uB4E4\uC774 \uBCF4\uC778\uB2E4.\n\uAC04\uD310\uB4E4\uC744
+      \uC870\uC0AC\uD55C \uACB0\uACFC, \uAC08 \uB9CC\uD55C \uC0C1\uC810\uB4E4\uC774
+      \uBA87\uAC1C \uB208\uC5D0 \uB744\uC778\uB2E4."
+    buttonTexts:
+    - "\uB3CC\uC544\uAC04\uB2E4."
+    buttonEvents:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 978466355}
+          m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
+          m_MethodName: ChangeEvent
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - title: "\uB358\uC804\uC73C\uB85C \uD5A5\uD558\uB2E4"
+    illustration: {fileID: 0}
+    text: "'\uC5D8\uBC84\uB77C'\uC758 \uC0C1\uC810\uAC00\uC5D0 \uB3C4\uCC29\uD558\uC790,
+      \uB2E4\uC591\uD55C \uAC00\uAC8C\uB4E4\uC774 \uBCF4\uC778\uB2E4.\n\uAC04\uD310\uB4E4\uC744
+      \uC870\uC0AC\uD55C \uACB0\uACFC, \uAC08 \uB9CC\uD55C \uC0C1\uC810\uB4E4\uC774
+      \uBA87\uAC1C \uB208\uC5D0 \uB744\uC778\uB2E4."
+    buttonTexts:
+    - "\uBB34\uAE30 \uC0C1\uC810\uC5D0 \uB4E4\uB978\uB2E4."
+    - "\uBC29\uD328 \uC0C1\uC810\uC5D0 \uB4E4\uB978\uB2E4."
+    - "\uD3EC\uC158 \uC0C1\uC810\uC5D0 \uB4E4\uB978\uB2E4."
+    - "\uB9C8\uC744 \uAD11\uC7A5\uC73C\uB85C \uB3CC\uC544\uAC04\uB2E4."
+    buttonEvents:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 978466355}
+          m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
+          m_MethodName: ChangeEvent
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 978466355}
+          m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
+          m_MethodName: ChangeEvent
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 6
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 978466355}
+          m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
+          m_MethodName: ChangeEvent
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 7
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 978466355}
+          m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
+          m_MethodName: ChangeEvent
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - title: "\uC0C1\uC810\uAC00\uB85C \uD5A5\uD558\uB2E4"
+    illustration: {fileID: 0}
+    text: "'\uC5D8\uBC84\uB77C'\uC758 \uC0C1\uC810\uAC00\uC5D0 \uB3C4\uCC29\uD558\uC790,
+      \uB2E4\uC591\uD55C \uAC00\uAC8C\uB4E4\uC774 \uBCF4\uC778\uB2E4.\n\uAC04\uD310\uB4E4\uC744
+      \uC870\uC0AC\uD55C \uACB0\uACFC, \uAC08 \uB9CC\uD55C \uC0C1\uC810\uB4E4\uC774
+      \uBA87\uAC1C \uB208\uC5D0 \uB744\uC778\uB2E4."
+    buttonTexts:
+    - "\uBB34\uAE30 \uC0C1\uC810\uC5D0 \uB4E4\uB978\uB2E4."
+    - "\uBC29\uD328 \uC0C1\uC810\uC5D0 \uB4E4\uB978\uB2E4."
+    - "\uD3EC\uC158 \uC0C1\uC810\uC5D0 \uB4E4\uB978\uB2E4."
+    - "\uB9C8\uC744 \uAD11\uC7A5\uC73C\uB85C \uB3CC\uC544\uAC04\uB2E4."
+    buttonEvents:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 978466355}
+          m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
+          m_MethodName: ChangeEvent
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 978466355}
+          m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
+          m_MethodName: ChangeEvent
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 6
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 978466355}
+          m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
+          m_MethodName: ChangeEvent
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 7
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 978466355}
+          m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
+          m_MethodName: ChangeEvent
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - title: "\uD734\uC2DD\uCC98\uB97C \uCC3E\uB2E4"
+    illustration: {fileID: 0}
+    text: "'\uC5D8\uBC84\uB77C'\uC758 \uC0C1\uC810\uAC00\uC5D0 \uB3C4\uCC29\uD558\uC790,
+      \uB2E4\uC591\uD55C \uAC00\uAC8C\uB4E4\uC774 \uBCF4\uC778\uB2E4.\n\uAC04\uD310\uB4E4\uC744
+      \uC870\uC0AC\uD55C \uACB0\uACFC, \uAC08 \uB9CC\uD55C \uC0C1\uC810\uB4E4\uC774
+      \uBA87\uAC1C \uB208\uC5D0 \uB744\uC778\uB2E4."
+    buttonTexts:
+    - "\uBB34\uAE30 \uC0C1\uC810\uC5D0 \uB4E4\uB978\uB2E4."
+    buttonEvents:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 978466355}
+          m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
+          m_MethodName: ChangeEvent
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  illustrationImage: {fileID: 175744318}
+  text: {fileID: 79310271}
+  button1: {fileID: 1441295389}
+  button2: {fileID: 1699379765}
+  button3: {fileID: 1606613532}
+  button4: {fileID: 1872792076}
 --- !u!1 &999064280
 GameObject:
   m_ObjectHideFlags: 0
@@ -3877,6 +4201,7 @@ Transform:
   m_Children:
   - {fileID: 706821189}
   - {fileID: 1818830748}
+  - {fileID: 978466354}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5023,7 +5348,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 160, y: -30}
-  m_SizeDelta: {x: 0, y: 50}
+  m_SizeDelta: {x: 283.41, y: 50}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1460530620
 MonoBehaviour:
@@ -7168,7 +7493,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 160, y: 45}
-  m_SizeDelta: {x: 0, y: 50}
+  m_SizeDelta: {x: 281.68, y: 50}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1847334484
 MonoBehaviour:
@@ -7943,7 +8268,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: -80}
-  m_SizeDelta: {x: 0, y: 50}
+  m_SizeDelta: {x: 383.18, y: 50}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &2017719677
 MonoBehaviour:
@@ -8577,7 +8902,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2131577020
 RectTransform:
   m_ObjectHideFlags: 0
