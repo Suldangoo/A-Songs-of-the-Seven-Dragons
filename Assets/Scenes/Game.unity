@@ -2817,7 +2817,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1141832175}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.8849343
+  m_Size: 0.88529086
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2980,13 +2980,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 637f199189aba214e8ca073d5ac147d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nowEvent: 1
+  nowEvent: 0
   events:
-  - title: "\uD504\uB864\uB85C\uADF8"
+  - title: "\uB9C8\uC744 : \uC5D8\uBC84\uB77C"
     illustration: {fileID: 21300000, guid: fef1453420433e249bf92378cf8f9e96, type: 3}
-    text: "\uC774\uAC83\uC740 \uC7A5\uD669\uD55C \uD504\uB864\uB85C\uADF8\uC774\uB2E4."
+    text: "\uB2F9\uC2E0\uC740 \uC774\uB8E8\uD2F0\uC544 \uB300\uB959\uC758 \uAC00\uC7A5
+      \uB0A8\uCABD\uC5D0 \uC790\uB9AC\uC7A1\uC740 \uB3C4\uC2DC, '\uC5D8\uBC84\uB77C'\uC758
+      \uAD11\uC7A5 \uD55C \uAC00\uC6B4\uB370\uC5D0 \uC11C\uC788\uB2E4.\n\n\uC8FC\uC704\uB97C
+      \uB458\uB7EC\uBCF4\uB2C8 \uC2DC\uB04C\uBC85\uC801\uD55C \uC0C1\uC810\uAC00\uB85C
+      \uB4E4\uC5B4\uAC00\uB294 \uACE8\uBAA9\uAE38\uC774 \uBCF4\uC600\uC73C\uBA70,
+      \uBD81\uCABD\uC5D4 \uC232\uC73C\uB85C \uB098\uAC00\uB294 \uAE38\uC774 \uC788\uB2E4."
     buttonTexts:
-    - "\uBAA8\uD5D8\uC744 \uC2DC\uC791\uD55C\uB2E4."
+    - "\uB9C8\uC744\uC744 \uB3CC\uC544\uB2E4\uB2CC\uB2E4."
+    - "\uB358\uC804\uC73C\uB85C \uD5A5\uD55C\uB2E4."
+    - "\uC0C1\uC810\uAC00\uB97C \uB458\uB7EC\uBCF8\uB2E4."
+    - "\uD734\uC2DD\uCC98\uB97C \uCC3E\uB294\uB2E4."
     buttonEvents:
     - m_PersistentCalls:
         m_Calls:
@@ -3002,20 +3010,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - title: "\uB9C8\uC744 : \uC5D8\uBC84\uB77C"
-    illustration: {fileID: 21300000, guid: fef1453420433e249bf92378cf8f9e96, type: 3}
-    text: "\uB2F9\uC2E0\uC740 \uC774\uB8E8\uD2F0\uC544 \uB300\uB959\uC758 \uAC00\uC7A5
-      \uB0A8\uCABD\uC5D0 \uC790\uB9AC\uC7A1\uC740 \uB3C4\uC2DC, '\uC5D8\uBC84\uB77C'\uC758
-      \uAD11\uC7A5 \uD55C \uAC00\uC6B4\uB370\uC5D0 \uC11C\uC788\uB2E4.\n\n\uC8FC\uC704\uB97C
-      \uB458\uB7EC\uBCF4\uB2C8 \uC2DC\uB04C\uBC85\uC801\uD55C \uC0C1\uC810\uAC00\uB85C
-      \uB4E4\uC5B4\uAC00\uB294 \uACE8\uBAA9\uAE38\uC774 \uBCF4\uC600\uC73C\uBA70,
-      \uBD81\uCABD\uC5D4 \uC232\uC73C\uB85C \uB098\uAC00\uB294 \uAE38\uC774 \uC788\uB2E4."
-    buttonTexts:
-    - "\uB9C8\uC744\uC744 \uB3CC\uC544\uB2E4\uB2CC\uB2E4."
-    - "\uB358\uC804\uC73C\uB85C \uD5A5\uD55C\uB2E4."
-    - "\uC0C1\uC810\uAC00\uB97C \uB458\uB7EC\uBCF8\uB2E4."
-    - "\uD734\uC2DD\uCC98\uB97C \uCC3E\uB294\uB2E4."
-    buttonEvents:
     - m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 978466355}
@@ -3058,20 +3052,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 978466355}
-          m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
-          m_MethodName: ChangeEvent
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 5
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
   - title: "\uC5D8\uBC84\uB77C\uB97C \uB3CC\uC544\uB2E4\uB2C8\uB2E4"
     illustration: {fileID: 0}
     text: "'\uC5D8\uBC84\uB77C'\uC758 \uC0C1\uC810\uAC00\uC5D0 \uB3C4\uCC29\uD558\uC790,
@@ -3090,7 +3070,7 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -3226,7 +3206,7 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -3249,7 +3229,7 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 5
+            m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0

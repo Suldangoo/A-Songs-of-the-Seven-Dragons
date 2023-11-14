@@ -830,15 +830,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: hp
-      value: 30
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: armor
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: charm
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: level
@@ -846,35 +846,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: gender
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: health
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: weapon
-      value: 9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: wisdom
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: agility
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: nickName
-      value: "\uAE00\uB77C\uB514\uC6B0\uC2A4"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: progress
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: strength
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: bgmVolume
@@ -886,11 +886,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: largeHpPotion
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: smallHpPotion
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4531175380888843923, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: m_RootOrder

@@ -31,7 +31,7 @@ public class EventManager : MonoBehaviour
     #endregion
 
     // 현재 발생하는 이벤트
-    public int nowEvent = 1; // 가장 기본으로 1번 이벤트 (마을 이벤트) 가 실행된다.
+    public int nowEvent = 0; // 가장 기본으로 0번 이벤트 (마을 이벤트) 가 실행된다.
 
     // 게임에 등장하는 이벤트들
     public Event[] events;

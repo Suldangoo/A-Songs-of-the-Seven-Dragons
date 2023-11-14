@@ -26,6 +26,8 @@ public class CreateCharacter : MonoBehaviour
     [SerializeField] private Toggle maleToggle; // 남자 토글
     [SerializeField] private Toggle femaleToggle; // 여자 토글
 
+    [SerializeField] private GameObject prologue; // 프롤로그 UI
+
     private void Start()
     {
         UpdateUI();
@@ -84,7 +86,14 @@ public class CreateCharacter : MonoBehaviour
         }
 
         SaveCharacterData(nickname);
-        sceneChanger.SceneChange("Game");
+
+        prologue.SetActive(true);
+    }
+
+    public void OnPrologue(bool value)
+    {
+        if (value) { sceneChanger.SceneChange("Prologue"); }
+        else { sceneChanger.SceneChange("Game"); } // 프롤로그 스킵
     }
 
     private void SaveCharacterData(string nickname)
