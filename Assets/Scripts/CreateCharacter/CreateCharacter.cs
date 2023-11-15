@@ -111,6 +111,7 @@ public class CreateCharacter : MonoBehaviour
         SaveManager.Charm = stats[4];
 
         SaveManager.Level = 1; // 레벨 초기화
+        SaveManager.Gold = 300; // 300골드 초기 지급
         SaveManager.Hp = SaveManager.Health * 3; // 건강 스탯 1당 Hp 3 부여
     }
 

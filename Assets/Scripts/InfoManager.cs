@@ -18,6 +18,7 @@ public class InfoManager : MonoBehaviour
     }
     private static InfoManager instance;
     #endregion
+    private ItemManager itemManager => ItemManager.Instance;
 
     [SerializeField] private Image[] characterImages; // 남자, 여자 캐릭터 이미지 배열 (0: 남자, 1: 여자)
     [SerializeField] private TMP_Text nickNameText;
@@ -35,6 +36,8 @@ public class InfoManager : MonoBehaviour
     [SerializeField] private Image armorImage; // 방어구 이미지
     [SerializeField] public Sprite[] weaponImages; // 무기 이미지 배열
     [SerializeField] public Sprite[] armorImages; // 방어구 이미지 배열
+    [SerializeField] private TMP_Text atkText;
+    [SerializeField] private TMP_Text defText;
     [SerializeField] private TMP_Text smallHpPotionText;
     [SerializeField] private TMP_Text largeHpPotionText;
 
@@ -91,9 +94,40 @@ public class InfoManager : MonoBehaviour
             armorImage.sprite = armorImages[armorIndex];
         }
 
+        // 10. 공격력 / 방어력
+        UpdateAttackAndDefense();
 
-        // 10. 포션
+        // 11. 포션
         smallHpPotionText.text = SaveManager.SmallHpPotion.ToString();
         largeHpPotionText.text = SaveManager.LargeHpPotion.ToString();
+    }
+
+    public void UpdateAttackAndDefense()
+    {
+        // 공격력 계산
+        int playerStrength = SaveManager.Strength;
+        int weaponIndex = SaveManager.Weapon;
+        if (weaponIndex >= 0 && weaponIndex < itemManager.weaponDatas.Length)
+        {
+            WeaponData weaponData = itemManager.weaponDatas[weaponIndex];
+            int fixedIncrease = weaponData.fixedIncrease;
+            float percentIncrease = weaponData.percentIncrease;
+
+            int totalAttack = Mathf.RoundToInt((playerStrength * 2 + fixedIncrease) * percentIncrease);
+            atkText.text = $"공격력: {totalAttack}";
+        }
+
+        // 방어력 계산
+        int playerAgility = SaveManager.Agility;
+        int armorIndex = SaveManager.Armor;
+        if (armorIndex >= 0 && armorIndex < itemManager.armorDatas.Length)
+        {
+            ArmorData armorData = itemManager.armorDatas[armorIndex];
+            int fixedIncrease = armorData.fixedIncrease;
+            float percentIncrease = armorData.percentIncrease;
+
+            int totalDefense = Mathf.RoundToInt((playerAgility * 2 + fixedIncrease) * percentIncrease);
+            defText.text = $"방어력: {totalDefense}";
+        }
     }
 }
