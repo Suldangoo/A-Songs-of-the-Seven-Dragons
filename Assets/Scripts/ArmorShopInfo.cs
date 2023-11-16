@@ -26,10 +26,10 @@ public class ArmorShopInfo : MonoBehaviour
     {
         itemCode = itemIndex;
 
-        // 현재 장착중인 무기 정보 갱신
+        // 현재 장착중인 방어구 정보 갱신
         UpdateArmorInfo(SaveManager.Armor, currentArmorImage, currentArmorNameText, currentArmorStatsText, currentArmorDescriptionText);
 
-        // 구매하려는 무기 정보 갱신
+        // 구매하려는 방어구 정보 갱신
         UpdateArmorInfo(itemCode, purchaseArmorImage, purchaseArmorNameText, purchaseArmorStatsText, purchaseArmorDescriptionText);
         purchaseArmorCostText.text = $"비용: {itemManager.armorDatas[itemCode].cost}";
     }
@@ -47,7 +47,7 @@ public class ArmorShopInfo : MonoBehaviour
         int ArmorFixedIncrease = itemManager.armorDatas[ArmorIndex].fixedIncrease;
         float ArmorPercentIncrease = itemManager.armorDatas[ArmorIndex].percentIncrease;
 
-        string ArmorStats = $"공격력: {ArmorFixedIncrease}\n추가공격력: +{((ArmorPercentIncrease - 1) * 100).ToString("F0")}%";
+        string ArmorStats = $"방어력: {ArmorFixedIncrease}\n추가방어력: +{((ArmorPercentIncrease - 1) * 100).ToString("F0")}%";
         statsText.text = ArmorStats;
 
         string ArmorDescription = itemManager.armorDatas[ArmorIndex].description;
