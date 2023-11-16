@@ -41,6 +41,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // 타이틀로
+    public void ExitTitle()
+    {
+        sceneChanger.SceneChange("Title");
+    }
+
     // 게임 종료
     public void ExitGame()
     {
