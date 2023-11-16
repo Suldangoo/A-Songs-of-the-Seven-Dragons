@@ -6,6 +6,7 @@ public class WeaponData
     public string name; // 무기 이름
     public int fixedIncrease; // 고정 상승 수치
     public float percentIncrease; // 퍼센트 상승 수치
+    public int cost; // 비용
     [TextArea(2, 5)] public string description; // 무기 설명 (2줄 이상, 5줄 이하)
 }
 
@@ -15,6 +16,7 @@ public class ArmorData
     public string name; // 방어구 이름
     public int fixedIncrease; // 고정 상승 수치
     public float percentIncrease; // 퍼센트 상승 수치
+    public int cost; // 비용
     [TextArea(2, 5)] public string description; // 방어구 설명 (2줄 이상, 5줄 이하)
 }
 
