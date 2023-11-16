@@ -30,8 +30,6 @@ public class EventManager : MonoBehaviour
     private static EventManager instance;
     #endregion
 
-    private ItemManager itemManager => ItemManager.Instance;
-
     // 현재 발생하는 이벤트
     public int nowEvent = 0; // 가장 기본으로 0번 이벤트 (마을 이벤트) 가 실행된다.
 
