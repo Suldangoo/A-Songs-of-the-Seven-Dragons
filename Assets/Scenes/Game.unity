@@ -6189,7 +6189,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1141832175}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.8850502
+  m_Size: 0.8862154
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7359,23 +7359,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: hp
-      value: 24
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: gold
-      value: 595
+      value: 1003
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: armor
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: charm
-      value: 17
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: level
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: gender
@@ -7383,27 +7383,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: health
-      value: 16
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: remain
-      value: 18
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: weapon
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: wisdom
-      value: 17
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: agility
-      value: 17
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: nickName
-      value: "\uC548\uB155"
+      value: "\uAE00\uB77C\uB514\uC6B0\uC2A4"
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: progress
@@ -7411,7 +7411,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: strength
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: bgmVolume
@@ -7423,15 +7423,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: experience
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: largeHpPotion
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3956615062322819265, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: smallHpPotion
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4531175380888843923, guid: 23bb4424fb331b44dbbe04acaa27ad33, type: 3}
       propertyPath: m_RootOrder
@@ -11987,75 +11987,77 @@ MonoBehaviour:
     monsters:
     - Name: "\uD551\uD06C \uC2AC\uB77C\uC784"
       Code: 0
-      AttackPower: 10
+      AttackPower: 30
       HP: 40
       Speed: 3
       RewardGold: 20
       RewardExp: 2
     - Name: "\uBE14\uB799 \uC2AC\uB77C\uC784"
       Code: 1
-      AttackPower: 15
+      AttackPower: 35
       HP: 70
       Speed: 5
       RewardGold: 40
       RewardExp: 3
     - Name: "\uD310\uC9F1"
       Code: 2
-      AttackPower: 25
+      AttackPower: 40
       HP: 100
       Speed: 8
       RewardGold: 80
       RewardExp: 4
     boss:
       Name: "\uC2AC\uB7FC\uD53C"
-      Code: 0
-      AttackPower: 35
+      Code: 3
+      AttackPower: 50
       HP: 130
       Speed: 10
       RewardGold: 200
       RewardExp: 10
   - title: "\uD5EC\uB77C \uACC4\uACE1"
     illustration: {fileID: 21300000, guid: cf87eb1f9d70fee4ab48852e4170105c, type: 3}
-    dedescription: "\uC232 \uC18D\uC5D0 \uBC1C\uC744 \uB4E4\uC774\uC790, \uADF8 \uC5B4\uB5A0\uD55C
-      \uC18C\uB9AC\uB3C4 \uB4E4\uB9AC\uC9C0 \uC54A\uACE0 \uC2A4\uC0B0\uD55C \uBC14\uB78C\uC18C\uB9AC\uB9CC\uC774
-      \uADC0\uB97C \uBA54\uC6B4\uB2E4."
-    treasure: 0
+    dedescription: "\uB4DC\uB192\uC740 \uD5EC\uB77C \uACC4\uACE1\uC758 \uC808\uBCBD\uC740
+      \uCC22\uC5B4\uC9C4 \uB4EF \uC7A5\uC5C4\uD558\uBA70, \uADF8 \uBC11\uBC14\uB2E5\uC740
+      \uB05D\uC744 \uBAA8\uB978\uB2E4."
+    treasure: 300
     text:
-    - "\uACE0\uC694\uC232\uC740 \uC870\uC6A9\uD558\uB2E4."
-    - "\uC232 \uC0AC\uC774\uB4E4\uC744 \uC0B4\uD3B4\uBCF4\uC558\uC73C\uB098 \uB531\uD788
-      \uBB38\uC81C\uB294 \uC5C6\uB2E4."
-    - "\uBA40\uB9AC\uC11C \uBAAC\uC2A4\uD130\uB4E4\uC774 \uB0A0 \uC9C0\uCF1C\uBCF4\uACE0
-      \uC788\uB294 \uB290\uB08C\uC774 \uB4E0\uB2E4."
+    - "\uACC4\uACE1 \uC0AC\uC774\uB97C \uD0C0\uACE0 \uC624\uB294 \uBC14\uB78C\uC18C\uB9AC\uAC00
+      \uCE7C\uAC19\uC774 \uADC0 \uC606\uC744 \uC9C0\uB098\uAC04\uB2E4."
+    - "\uACC4\uACE1\uC758 \uBC11\uBC14\uB2E5\uC5D0\uC11C \uC815\uCCB4\uB97C \uBAA8\uB974\uACA0\uB294
+      \uBAAC\uC2A4\uD130\uB4E4\uC758 \uAE30\uCC99\uC774 \uB290\uAEF4\uC9C4\uB2E4."
+    - "\uC870\uAE08\uC774\uB77C\uB3C4 \uBC1C\uC744 \uD5DB\uB514\uB39F\uB2E4\uAC04
+      \uB2E4\uC2DC\uB294 \uC0B4\uC544\uB3CC\uC544\uC62C \uC218 \uC5C6\uC744 \uAC83
+      \uAC19\uB2E4."
     monsters:
-    - Name: "\uC2AC\uB77C\uC784"
-      Code: 0
-      AttackPower: 3
-      HP: 20
-      Speed: 0
-      RewardGold: 20
-      RewardExp: 0
-    - Name: "\uACE0\uBE14\uB9B0"
-      Code: 0
-      AttackPower: 5
-      HP: 30
-      Speed: 0
-      RewardGold: 40
-      RewardExp: 0
-    - Name: "\uC624\uD06C"
-      Code: 0
-      AttackPower: 8
-      HP: 70
-      Speed: 0
-      RewardGold: 80
-      RewardExp: 0
-    boss:
-      Name: "\uCF04\uD0C0\uC6B0\uB85C\uC2A4"
-      Code: 0
-      AttackPower: 12
-      HP: 100
-      Speed: 0
+    - Name: "\uC2A4\uD1A4\uBE44\uC2A4\uD2B8"
+      Code: 4
+      AttackPower: 70
+      HP: 200
+      Speed: 13
       RewardGold: 200
-      RewardExp: 0
+      RewardExp: 12
+    - Name: "\uBE14\uB808\uC774\uC988"
+      Code: 5
+      AttackPower: 80
+      HP: 230
+      Speed: 15
+      RewardGold: 250
+      RewardExp: 15
+    - Name: "\uADF8\uB808\uC774\uD2B8 \uD310\uC9F1"
+      Code: 6
+      AttackPower: 90
+      HP: 270
+      Speed: 17
+      RewardGold: 300
+      RewardExp: 17
+    boss:
+      Name: "\uB9CC\uD2F0\uCF54\uC5B4"
+      Code: 7
+      AttackPower: 100
+      HP: 300
+      Speed: 20
+      RewardGold: 400
+      RewardExp: 20
   - title: "\uB465\uC9C0"
     illustration: {fileID: 21300000, guid: f8d9593c559ae4d47807e337e28f65d1, type: 3}
     dedescription: "\uCF00\uCF00\uBB35\uC740 \uB0C4\uC0C8\uC640 \uD718\uB0A0\uB9AC\uB294
@@ -12064,44 +12066,46 @@ MonoBehaviour:
       \uB545\uC758 \uC800 \uBA40\uB9AC\uC5D4 \uBAB0\uB77D\uD55C \uC131\uACFC \uADF8
       \uC704\uC5D0 \uC549\uC544\uC788\uB294 \uBC14\uD558\uBB34\uD2B8\uB9CC\uC774
       \uC874\uC7AC\uD55C\uB2E4."
-    treasure: 0
+    treasure: 500
     text:
-    - "\uACE0\uC694\uC232\uC740 \uC870\uC6A9\uD558\uB2E4."
-    - "\uC232 \uC0AC\uC774\uB4E4\uC744 \uC0B4\uD3B4\uBCF4\uC558\uC73C\uB098 \uB531\uD788
-      \uBB38\uC81C\uB294 \uC5C6\uB2E4."
-    - "\uBA40\uB9AC\uC11C \uBAAC\uC2A4\uD130\uB4E4\uC774 \uB0A0 \uC9C0\uCF1C\uBCF4\uACE0
-      \uC788\uB294 \uB290\uB08C\uC774 \uB4E0\uB2E4."
+    - "\uD718\uB0A0\uB9AC\uB294 \uC7AC\uB4E4\uC774 \uB208 \uC55E\uC744 \uC0C8\uAE4C\uB9E3\uAC8C
+      \uCC44\uC6B4\uB2E4."
+    - "\uBC14\uD558\uBB34\uD2B8\uC758 \uB728\uAC70\uC6B4 \uC228\uACB0\uC774 \uBC14\uB85C
+      \uC55E\uAE4C\uC9C0 \uB2E4\uAC00\uC624\uB294 \uAC83 \uAC19\uB2E4."
+    - "\uBC14\uD558\uBB34\uD2B8\uC758 \uD558\uC218\uC778\uB4E4\uC774 \uC5B4\uC9C8\uB7EC\uC9C4
+      \uB545\uC744 \uAC00\uB4DD \uCC44\uC6B4 \uAC83\uC774 \uBCF4\uC778\uB2E4."
     monsters:
-    - Name: "\uC2AC\uB77C\uC784"
-      Code: 0
-      AttackPower: 3
-      HP: 20
-      Speed: 0
-      RewardGold: 20
-      RewardExp: 0
-    - Name: "\uACE0\uBE14\uB9B0"
-      Code: 0
-      AttackPower: 5
-      HP: 30
-      Speed: 0
-      RewardGold: 40
-      RewardExp: 0
-    - Name: "\uC624\uD06C"
-      Code: 0
-      AttackPower: 8
-      HP: 70
-      Speed: 0
-      RewardGold: 80
-      RewardExp: 0
+    - Name: "\uB2E4\uD06C \uD06C\uB9AC\uCCD0"
+      Code: 8
+      AttackPower: 120
+      HP: 500
+      Speed: 40
+      RewardGold: 1000
+      RewardExp: 30
+    - Name: "\uC774\uBE14 \uD5CC\uD130"
+      Code: 9
+      AttackPower: 150
+      HP: 700
+      Speed: 50
+      RewardGold: 3000
+      RewardExp: 40
+    - Name: "\uCE74\uC624\uC2A4 \uC194\uC800"
+      Code: 10
+      AttackPower: 170
+      HP: 1000
+      Speed: 60
+      RewardGold: 5000
+      RewardExp: 50
     boss:
-      Name: "\uCF04\uD0C0\uC6B0\uB85C\uC2A4"
-      Code: 0
-      AttackPower: 12
-      HP: 100
-      Speed: 0
-      RewardGold: 200
-      RewardExp: 0
+      Name: "\uBC14\uD558\uBB34\uD2B8"
+      Code: 11
+      AttackPower: 270
+      HP: 3000
+      Speed: 100
+      RewardGold: 50000
+      RewardExp: 100
   LevelUpPopup: {fileID: 1764362952}
+  bossCode: 11
   illustrationImage: {fileID: 175744318}
   monsterImage: {fileID: 252429870}
   monsterAnim: {fileID: 252429872}

@@ -45,6 +45,7 @@ public class DungeonManager : MonoBehaviour
     private static DungeonManager instance;
     #endregion
 
+    GameManager gameManager => GameManager.Instance;
     EventManager eventManager => EventManager.Instance;
     InfoManager infoManager => InfoManager.Instance;
     ItemManager itemManager => ItemManager.Instance;
@@ -55,6 +56,7 @@ public class DungeonManager : MonoBehaviour
     public Dungeon[] dungeons; // 던전
 
     [SerializeField] private GameObject LevelUpPopup;
+    [SerializeField] private int bossCode = 11;
 
     // 화면의 UI에 표시되는 오브젝트들
     [SerializeField] private Image illustrationImage;
@@ -139,11 +141,16 @@ public class DungeonManager : MonoBehaviour
 
         // 던전 진행률 1~4% 상승
         progress += Random.Range(1, 5);
+        progress = Mathf.Min(100, progress);
 
         // 업데이트된 던전 정보를 UI에 반영
         UpdateProgressUI();
 
-        if (randomValue <= 40) // 40% 확률: 던전 탐색 텍스트
+        if (progress >= 100)
+        {
+            EncounterBoss();
+        }
+        else if (randomValue <= 40) // 40% 확률: 던전 탐색 텍스트
         {
             // Dungeon 클래스의 text 중 랜덤하게 선택
             string dungeonText = currentDungeon.text[Random.Range(0, currentDungeon.text.Length)];
@@ -172,7 +179,7 @@ public class DungeonManager : MonoBehaviour
         UpdateProgressUI();
     }
 
-    // 몬스터 조우 이벤트를 처리하는 메소드
+    // 몬스터 조우 이벤트
     private void EncounterMonster()
     {
         monsterImage.gameObject.SetActive(true); // 몬스터 활성화
@@ -182,7 +189,7 @@ public class DungeonManager : MonoBehaviour
 
         monsterAnim.SetInteger("monster", randomMonster.Code); // 몬스터 애니메이터 재생
 
-        this.text.text = $"{randomMonster.Name}이(가) 등장했다!\n체력: {randomMonster.HP}\n공격력: {randomMonster.AttackPower}\n스피드: {randomMonster.Speed}";
+        this.text.text = $"{randomMonster.Name}이(가) 등장했다!\n\n체력: {randomMonster.HP}\n공격력: {randomMonster.AttackPower}\n스피드: {randomMonster.Speed}";
 
         // 버튼1 텍스트와 이벤트 설정
         SetButton(button1, "전투 시작!", () => StartBattle(randomMonster));
@@ -195,13 +202,32 @@ public class DungeonManager : MonoBehaviour
         button4.gameObject.SetActive(false);
     }
 
-    // 몬스터로부터 도망치는 메소드
-    public void RunAway()
+    // 보스 몬스터 조우 이벤트
+    private void EncounterBoss()
     {
-        monsterImage.gameObject.SetActive(false); // 몬스터 비활성화
-        dungeonProgress.gameObject.SetActive(true);
+        monsterImage.gameObject.SetActive(true); // 몬스터 활성화
+        dungeonProgress.gameObject.SetActive(false); // 잠깐 비활성화
 
-        StartDungeon(currentDungeon);
+        Monster bossMonster = currentDungeon.boss; // 보스 몬스터 가져오기
+
+        monsterAnim.SetInteger("monster", bossMonster.Code); // 몬스터 애니메이터 재생
+
+        if (bossMonster.Code == bossCode)
+        {
+            text.text = $"어두운 기운을 전신에 두르고 있는,\n위대한 일곱 용들 중 흑룡, {bossMonster.Name}가 나타났다!\n\n체력: {bossMonster.HP}\n공격력: {bossMonster.AttackPower}\n스피드: {bossMonster.Speed}";
+        }
+        else
+        {
+            text.text = $"{currentDungeon.title}의 보스, {bossMonster.Name}가 나타났다!\n\n체력: {bossMonster.HP}\n공격력: {bossMonster.AttackPower}\n스피드: {bossMonster.Speed}";
+        }
+
+        // 버튼1 텍스트와 이벤트 설정
+        SetButton(button1, "전투 시작!", () => StartBossBattle(bossMonster));
+
+        // 버튼 비활성화
+        button2.gameObject.SetActive(false);
+        button3.gameObject.SetActive(false);
+        button4.gameObject.SetActive(false);
     }
 
     // 전투 시작 메소드
@@ -210,11 +236,30 @@ public class DungeonManager : MonoBehaviour
         button1.gameObject.SetActive(false);
         button2.gameObject.SetActive(false);
 
-        StartCoroutine(AutoBattle(monster));
+        StartCoroutine(AutoBattle(monster, false));
+    }
+
+    // 보스 몬스터와의 전투 시작 메소드
+    private void StartBossBattle(Monster bossMonster)
+    {
+        button1.gameObject.SetActive(false);
+        button2.gameObject.SetActive(false);
+
+        StartCoroutine(AutoBattle(bossMonster, true)); // 보스 몬스터 전투 플래그를 true로 전달
+    }
+
+
+    // 몬스터로부터 도망치는 메소드
+    public void RunAway()
+    {
+        monsterImage.gameObject.SetActive(false); // 몬스터 비활성화
+        dungeonProgress.gameObject.SetActive(true); // 진행도 활성화
+
+        StartDungeon(currentDungeon);
     }
 
     // 자동 전투 코루틴
-    private IEnumerator AutoBattle(Monster monster)
+    private IEnumerator AutoBattle(Monster monster, bool isBoss)
     {
         // 전투 로그 초기화
         text.text = "";
@@ -253,9 +298,20 @@ public class DungeonManager : MonoBehaviour
                 // 값 갱신
                 infoManager.UpdateInfo();
 
-                // 버튼1 텍스트와 이벤트 설정
                 button1.gameObject.SetActive(true);
-                SetButton(button1, "다시 탐색을 시작한다.", () => StartDungeon(currentDungeon));
+
+                if (isBoss && monster.Code != bossCode)
+                {
+                    SetButton(button1, "돌아간다.", BackToVillage);
+                }
+                else if (isBoss && monster.Code == bossCode)
+                {
+                    SetButton(button1, "결말로 향한다.", GameClear);
+                }
+                else
+                {
+                    SetButton(button1, "다시 탐색을 시작한다.", () => StartDungeon(currentDungeon));
+                }
 
                 yield break; // 코루틴 종료
             }
@@ -265,6 +321,7 @@ public class DungeonManager : MonoBehaviour
 
             // 플레이어에게 데미지 입히기
             SaveManager.Hp -= monsterDamage;
+            SaveManager.Hp = Mathf.Max(0, SaveManager.Hp);
 
             // 값 갱신
             infoManager.UpdateInfo();
@@ -275,8 +332,19 @@ public class DungeonManager : MonoBehaviour
             // 플레이어 사망 체크
             if (SaveManager.Hp <= 0)
             {
-                // 플레이어 사망 처리 (후속 처리는 PlayerDead() 메소드에서)
-                PlayerDead();
+                // 랜덤 골드 소실
+                int lossGold = Random.Range(0, SaveManager.Gold);
+                SaveManager.Gold -= lossGold;
+
+                // 전투 로그에 승리 메시지 추가
+                text.text += $"{monster.Name}와의 전투에서 패배했다...\n";
+                text.text += $"{lossGold}만큼의 골드를 잃었다.\n";
+
+                // 값 갱신
+                infoManager.UpdateInfo();
+
+                button1.gameObject.SetActive(true);
+                SetButton(button1, "정신을 차린다.", BackToVillage);
 
                 yield break; // 코루틴 종료
             }
@@ -375,15 +443,6 @@ public class DungeonManager : MonoBehaviour
         return damage;
     }
 
-    // 플레이어가 죽었을 때 호출되는 메소드
-    private void PlayerDead()
-    {
-        // 플레이어 사망 처리
-        // (추가적인 게임 오버 화면 표시 등의 로직을 여기에 추가할 수 있습니다.)
-        // 예: GameManager.Instance.GameOver();
-    }
-
-
     // 휴식처 이벤트를 처리하는 메소드
     private void RestEvent()
     {
@@ -410,6 +469,12 @@ public class DungeonManager : MonoBehaviour
 
         // 최대 체력을 넘지 않도록 조절
         SaveManager.Hp = Mathf.Min(SaveManager.Hp, maxHp);
+
+        // 버튼1 텍스트와 이벤트 설정
+        SetButton(button1, "탐색한다.", ExploreDungeon);
+
+        // 버튼2 텍스트와 이벤트 설정
+        SetButton(button2, "돌아간다.", BackToVillage);
 
         // 휴식 후 ExploreDungeon 실행
         ExploreDungeon();
@@ -449,9 +514,20 @@ public class DungeonManager : MonoBehaviour
     // 마을로 귀환하는 메소드
     public void BackToVillage()
     {
+        if (SaveManager.Hp <= 0)
+        {
+            SaveManager.Hp = 10;
+        }
+
         progress = 0; // 던전 진행도 초기화
         dungeonProgress.gameObject.SetActive(false); // 던전 진행률을 나타내는 GUI 오브젝트 끄기
+        monsterImage.gameObject.SetActive(false); // 몬스터 스프라이트 종료
 
         eventManager.ChangeEvent(0); // 마을로 돌아가기
+    }
+
+    public void GameClear()
+    {
+        gameManager.Ending();
     }
 }

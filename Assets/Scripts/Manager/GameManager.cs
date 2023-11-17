@@ -40,6 +40,10 @@ public class GameManager : MonoBehaviour
             sceneChanger.SceneChange("CreateCharacter");
         }
     }
+    public void Ending()
+    {
+        sceneChanger.SceneChange("Ending");
+    }
 
     // 타이틀로
     public void ExitTitle()

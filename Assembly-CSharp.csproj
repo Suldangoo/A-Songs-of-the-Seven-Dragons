@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\CreateCharacter\NicknameInputValidator.cs" />
     <Compile Include="Assets\Scripts\PotionShopInfo.cs" />
     <Compile Include="Assets\Scripts\LevelUp.cs" />
+    <Compile Include="Assets\Scripts\EndingSceneManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
