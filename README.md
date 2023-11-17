@@ -33,3 +33,8 @@ ChatGPT와 Stable Diffusion만으로 게임 만들기
 ### Stable Diffusion 사용 내역
 - 게임의 모든 일러스트 생성
 - 게임 캐릭터 외형 생성
+
+### 게임 빌드 파일
+- 본 게임은 모바일 / PC 모두 구동 가능한 크로스 플랫폼 게임
+- [APK 파일 (권장)](https://drive.google.com/file/d/1ZmY7oQl996tC_Y4rDK3e5dSPqO2oZtD4/view?usp=sharing)
+- [PC 버전](https://drive.google.com/file/d/1EL_yoAYwecf4FlQfQK-PCTnrDEF-otn9/view?usp=sharing)
