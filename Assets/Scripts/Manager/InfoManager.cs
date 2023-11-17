@@ -60,7 +60,7 @@ public class InfoManager : MonoBehaviour
         levelText.text = $"Level: {SaveManager.Level}";
 
         // 4. 캐릭터 경험치
-        int maxExperience = SaveManager.Level * 5;
+        int maxExperience = 5 + SaveManager.Level * 5;
         float fillAmount = (float)SaveManager.Experience / maxExperience;
         experienceFillImage.fillAmount = fillAmount;
 

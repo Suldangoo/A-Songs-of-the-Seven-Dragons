@@ -30,6 +30,8 @@ public class EventManager : MonoBehaviour
     private static EventManager instance;
     #endregion
 
+    InfoManager infoManager => InfoManager.Instance;
+
     // 현재 발생하는 이벤트
     public int nowEvent = 0; // 가장 기본으로 0번 이벤트 (마을 이벤트) 가 실행된다.
 
@@ -92,5 +94,31 @@ public class EventManager : MonoBehaviour
     {
         nowEvent = eventIndex;
         ShowEvent(nowEvent);
+    }
+
+    public void Inn()
+    {
+        int innCost = 50; // 여관 비용
+
+        // 충분한 골드가 있는지 확인
+        if (SaveManager.Gold >= innCost)
+        {
+            // 골드 차감
+            SaveManager.Gold -= innCost;
+
+            // 체력을 최대 체력으로 회복
+            SaveManager.Hp = SaveManager.Health * 3;
+
+            // 값 갱신
+            infoManager.UpdateInfo();
+
+            // 여관 이벤트 완료 후 이벤트 변경
+            ChangeEvent(5); // 여관 이벤트 인덱스에 맞게 변경
+        }
+        else
+        {
+            // 골드가 부족하다는 메시지 또는 다른 처리를 여기에 추가
+            Debug.Log("골드가 부족하여 여관을 이용할 수 없습니다.");
+        }
     }
 }

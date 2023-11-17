@@ -77,6 +77,8 @@
     <Compile Include="Assets\Scripts\SaveData\SaveManager.cs" />
     <Compile Include="Assets\Scripts\PrologueSceneManager.cs" />
     <Compile Include="Assets\Scripts\CreateCharacter\NicknameInputValidator.cs" />
+    <Compile Include="Assets\Scripts\PotionShopInfo.cs" />
+    <Compile Include="Assets\Scripts\LevelUp.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

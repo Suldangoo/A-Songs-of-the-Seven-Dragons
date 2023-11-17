@@ -31,6 +31,7 @@ public class SaveDataViewer : MonoBehaviour
     public int health;
     public int wisdom;
     public int charm;
+    public int remain;
     public int gold;
     public int weapon;
     public int armor;
@@ -60,6 +61,7 @@ public class SaveDataViewer : MonoBehaviour
         health = SaveManager.Health;
         wisdom = SaveManager.Wisdom;
         charm = SaveManager.Charm;
+        remain = SaveManager.Remain;
         gold = SaveManager.Gold;
         weapon = SaveManager.Weapon;
         armor = SaveManager.Armor;
@@ -83,6 +85,7 @@ public class SaveDataViewer : MonoBehaviour
         SaveManager.Health = health;
         SaveManager.Wisdom = wisdom;
         SaveManager.Charm = charm;
+        SaveManager.Remain = remain;
         SaveManager.Gold = gold;
         SaveManager.Weapon = weapon;
         SaveManager.Armor = armor;

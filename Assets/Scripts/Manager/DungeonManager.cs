@@ -54,6 +54,8 @@ public class DungeonManager : MonoBehaviour
 
     public Dungeon[] dungeons; // 던전
 
+    [SerializeField] private GameObject LevelUpPopup;
+
     // 화면의 UI에 표시되는 오브젝트들
     [SerializeField] private Image illustrationImage;
     [SerializeField] private Image monsterImage;
@@ -70,7 +72,6 @@ public class DungeonManager : MonoBehaviour
     public void EnterDungeon(int dungeon)
     {
         currentDungeon = dungeons[dungeon]; // 위치한 던전 갱신
-        dungeonProgress.gameObject.SetActive(true); // 던전 진행률을 나타내는 GUI 오브젝트 켜기
         illustrationImage.sprite = currentDungeon.illustration; // 던전 일러스트 출력
 
         StartDungeon(currentDungeon);
@@ -83,6 +84,8 @@ public class DungeonManager : MonoBehaviour
         text.text = currentDungeon.dedescription; // 던전 설명 출력
 
         monsterImage.gameObject.SetActive(false);
+        dungeonProgress.gameObject.SetActive(true);
+
         button1.gameObject.SetActive(true);
         button2.gameObject.SetActive(true);
 
@@ -244,8 +247,8 @@ public class DungeonManager : MonoBehaviour
                 text.text += $"{monster.RewardExp}만큼의 경험치를 획득했다.";
 
                 // SaveManager에 골드와 경험치 반영
-                SaveManager.Gold += monster.RewardGold;
-                SaveManager.Experience += monster.RewardExp;
+                SaveManager.Gold += Mathf.RoundToInt(monster.RewardGold * (1f + SaveManager.Wisdom / 100f));
+                GainExperience(monster.RewardExp);
 
                 // 값 갱신
                 infoManager.UpdateInfo();
@@ -263,6 +266,9 @@ public class DungeonManager : MonoBehaviour
             // 플레이어에게 데미지 입히기
             SaveManager.Hp -= monsterDamage;
 
+            // 값 갱신
+            infoManager.UpdateInfo();
+
             // 전투 로그에 몬스터의 공격 메시지 추가
             text.text += $"{monster.Name}의 공격! {monsterDamage}의 피해를 입었다!\n";
 
@@ -278,9 +284,41 @@ public class DungeonManager : MonoBehaviour
             // 0.7초 대기
             yield return new WaitForSeconds(0.7f);
         }
+    }
 
-        // 값 갱신
-        infoManager.UpdateInfo();
+    // 경험치 획득 및 레벨업 처리 메소드
+    private void GainExperience(int experience)
+    {
+        // 현재 레벨
+        int currentLevel = SaveManager.Level;
+
+        // 레벨업 기준 경험치
+        int levelUpExp = 5 + currentLevel * 5;
+
+        // 경험치 획득
+        SaveManager.Experience += experience;
+
+        // 레벨업 여부 확인 및 처리
+        while (SaveManager.Experience >= levelUpExp)
+        {
+            // 경험치 소모
+            SaveManager.Experience -= levelUpExp;
+
+            // 레벨 증가
+            SaveManager.Level++;
+
+            // 남은 스탯 포인트 증가
+            SaveManager.Remain += 3;
+
+            // 레벨업 기준 경험치 갱신
+            levelUpExp = 5 + SaveManager.Level * 5;
+        }
+
+        // 레벨업 팝업을 표시
+        if (SaveManager.Level > currentLevel)
+        {
+            LevelUpPopup.SetActive(true);
+        }
     }
 
     // 플레이어의 데미지 계산 메소드

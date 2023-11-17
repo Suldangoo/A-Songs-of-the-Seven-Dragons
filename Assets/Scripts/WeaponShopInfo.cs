@@ -31,7 +31,7 @@ public class WeaponShopInfo : MonoBehaviour
 
         // 구매하려는 무기 정보 갱신
         UpdateWeaponInfo(itemCode, purchaseWeaponImage, purchaseWeaponNameText, purchaseWeaponStatsText, purchaseWeaponDescriptionText);
-        purchaseWeaponCostText.text = $"비용: {itemManager.weaponDatas[itemCode].cost}";
+        purchaseWeaponCostText.text = $"비용: {itemManager.weaponDatas[itemCode].cost - SaveManager.Charm}";
     }
 
     private void UpdateWeaponInfo(int weaponIndex, Image image, TMP_Text nameText, TMP_Text statsText, TMP_Text descriptionText)
@@ -60,11 +60,14 @@ public class WeaponShopInfo : MonoBehaviour
         int currentGold = SaveManager.Gold;
         int purchaseCost = itemManager.weaponDatas[itemCode].cost;
 
+        // Charm에 따른 비용 조정
+        int adjustedCost = Mathf.Max(0, purchaseCost - SaveManager.Charm); // 상수값으로 조정
+
         // 돈이 충분하면 무기를 구매
-        if (currentGold >= purchaseCost)
+        if (currentGold >= adjustedCost)
         {
             // 돈 차감
-            SaveManager.Gold -= purchaseCost;
+            SaveManager.Gold -= adjustedCost;
 
             // 무기 교체
             SaveManager.Weapon = itemCode;
@@ -84,4 +87,5 @@ public class WeaponShopInfo : MonoBehaviour
             Debug.Log("돈이 부족합니다.");
         }
     }
+
 }

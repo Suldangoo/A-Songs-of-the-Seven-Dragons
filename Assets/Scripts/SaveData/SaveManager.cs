@@ -13,6 +13,7 @@ public static class SaveManager
     static string healthKey = "health";                 // 건강 스테이터스
     static string wisdomKey = "wisdom";                 // 지혜 스테이터스
     static string charmKey = "charm";                   // 매력 스테이터스
+    static string remainKey = "remain";                 // 남은 스테이터스
     static string goldKey = "gold";                     // 골드
     static string weaponKey = "weapon";                 // 착용 무기
     static string armorKey = "armor";                   // 착용 방어구
@@ -94,6 +95,12 @@ public static class SaveManager
     {
         get { return PlayerPrefs.GetInt(charmKey); }
         set { PlayerPrefs.SetInt(charmKey, value); }
+    }
+
+    public static int Remain
+    {
+        get { return PlayerPrefs.GetInt(remainKey); }
+        set { PlayerPrefs.SetInt(remainKey, value); }
     }
 
     public static int Gold
