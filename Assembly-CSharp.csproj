@@ -59,6 +59,7 @@
     <Compile Include="Assets\Scripts\Manager\ItemManager.cs" />
     <Compile Include="Assets\Scripts\SaveData\SaveViewerEditor.cs" />
     <Compile Include="Assets\Scripts\ScrollIndicatorController.cs" />
+    <Compile Include="Assets\Scripts\Manager\DungeonManager.cs" />
     <Compile Include="Assets\Scripts\WeaponShopInfo.cs" />
     <Compile Include="Assets\Scripts\SaveData\SaveDataViewer.cs" />
     <Compile Include="Assets\Scripts\UITextInteraction.cs" />
@@ -76,7 +77,6 @@
     <Compile Include="Assets\Scripts\SaveData\SaveManager.cs" />
     <Compile Include="Assets\Scripts\PrologueSceneManager.cs" />
     <Compile Include="Assets\Scripts\CreateCharacter\NicknameInputValidator.cs" />
-    <Compile Include="Assets\Scripts\Manager\DungeonManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

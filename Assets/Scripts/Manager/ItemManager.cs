@@ -39,4 +39,32 @@ public class ItemManager : MonoBehaviour
 
     public WeaponData[] weaponDatas; // 무기 데이터 배열
     public ArmorData[] armorDatas; // 방어구 데이터 배열
+
+    InfoManager infoManager => InfoManager.Instance;
+
+    // 물약을 사용하는 메소드
+    public void OnClickPotion(int size)
+    {
+        int maxHp = SaveManager.Health * 3;
+
+        // 작은 물약 사용
+        if (size == 0 && SaveManager.SmallHpPotion > 0)
+        {
+            SaveManager.SmallHpPotion--;
+            int healAmount = Mathf.RoundToInt(maxHp * 0.3f);
+            SaveManager.Hp += healAmount;
+            SaveManager.Hp = Mathf.Min(SaveManager.Hp, maxHp);
+            infoManager.UpdateInfo(); // 정보 갱신
+        }
+
+        // 큰 물약 사용
+        else if (size == 1 && SaveManager.LargeHpPotion > 0)
+        {
+            SaveManager.LargeHpPotion--;
+            int healAmount = Mathf.RoundToInt(maxHp * 0.8f);
+            SaveManager.Hp += healAmount;
+            SaveManager.Hp = Mathf.Min(SaveManager.Hp, maxHp);
+            infoManager.UpdateInfo(); // 정보 갱신
+        }
+    }
 }
